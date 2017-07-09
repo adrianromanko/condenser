@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from 'app/components/elements/Icon.jsx';
+import Icon from 'app/components/elements/Icon';
 
 export default function MiniHeader() {
     return <header className="Header">
