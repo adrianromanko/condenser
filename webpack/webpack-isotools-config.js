@@ -1,7 +1,10 @@
 const webpack_isomorphic_tools_plugin = require('webpack-isomorphic-tools/plugin');
+const path = require('path');
+const ROOT = path.join(__dirname, '..');
 
 module.exports = {
-    webpack_assets_file_path: process.env.NODE_ENV === 'production' ? 'tmp/webpack-isotools-assets-prod.json' : 'tmp/webpack-isotools-assets-dev.json',
+    debug: true,
+    webpack_assets_file_path: ROOT + (process.env.NODE_ENV === 'production' ? '/tmp/webpack-isotools-assets-prod.json' : '/tmp/webpack-isotools-assets-dev.json'),
     assets: {
         images:
         {

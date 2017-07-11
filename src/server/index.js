@@ -33,7 +33,7 @@ global.$STM_Config = {
 
 const WebpackIsomorphicTools = require('webpack-isomorphic-tools');
 const WebpackIsomorphicToolsConfig = require(
-    '../webpack/webpack-isotools-config'
+    '../../webpack/webpack-isotools-config'
 );
 
 global.webpackIsomorphicTools = new WebpackIsomorphicTools(
